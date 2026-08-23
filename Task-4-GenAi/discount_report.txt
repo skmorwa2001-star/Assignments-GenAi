@@ -1,0 +1,6 @@
+Product | Price | Discounted Price
+Mouse|500|450.0
+Keyword|800|720.0
+Monitor|7000|6300.0
+Pendrive|400|360.0
+Camera|5000|4500.0
