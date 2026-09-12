@@ -262,6 +262,6 @@ If this repository helps you in your own AI/ML learning journey, consider giving
 
 ---
 
-#### --------------------------------- Learn • Build • Experiment • Improve ---------------------------------------
+####                                   Learn • Build • Experiment • Improve 
 
-#### ----------------------------------- Made with Python & curiosity 🤖 ---------------------------------------
+####                                     Made with Python & curiosity 🤖 
