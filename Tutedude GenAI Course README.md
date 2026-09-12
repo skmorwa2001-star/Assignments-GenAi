@@ -75,49 +75,6 @@ AI Applications & Projects
 
 ---
 
-## 📂 Repository Structure
-
-```text
-Assignment-GenAI/
-│
-├── Python/
-│   ├── Basics/
-│   ├── OOP/
-│   └── Assignments/
-│
-├── NumPy/
-│   └── Assignments/
-│
-├── Pandas/
-│   └── Assignments/
-│
-├── Matplotlib/
-│   └── Assignments/
-│
-├── Seaborn/
-│   └── Assignments/
-│
-├── Machine-Learning/
-│   ├── Regression/
-│   ├── Classification/
-│   ├── Decision-Tree/
-│   ├── SVM/
-│   ├── Naive-Bayes/
-│   └── Assignments/
-│
-├── Generative-AI/
-│   ├── Concepts/
-│   ├── Experiments/
-│   └── Projects/
-│
-├── Projects/
-│
-└── README.md
-```
-
-> Folder names may evolve as the course progresses.
-
----
 
 # 📊 Data Science
 
