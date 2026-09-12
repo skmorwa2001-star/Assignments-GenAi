@@ -75,50 +75,6 @@ AI Applications & Projects
 
 ---
 
-## 📂 Repository Structure
-
-```text
-Assignment-GenAI/
-│
-├── Python/
-│   ├── Basics/
-│   ├── OOP/
-│   └── Assignments/
-│
-├── NumPy/
-│   └── Assignments/
-│
-├── Pandas/
-│   └── Assignments/
-│
-├── Matplotlib/
-│   └── Assignments/
-│
-├── Seaborn/
-│   └── Assignments/
-│
-├── Machine-Learning/
-│   ├── Regression/
-│   ├── Classification/
-│   ├── Decision-Tree/
-│   ├── SVM/
-│   ├── Naive-Bayes/
-│   └── Assignments/
-│
-├── Generative-AI/
-│   ├── Concepts/
-│   ├── Experiments/
-│   └── Projects/
-│
-├── Projects/
-│
-└── README.md
-```
-
-> Folder names may evolve as the course progresses.
-
----
-
 # 📊 Data Science
 
 During the course, I worked with the core Python data-science ecosystem.
@@ -306,10 +262,6 @@ If this repository helps you in your own AI/ML learning journey, consider giving
 
 ---
 
-<p align="center">
-  <b>Learn • Build • Experiment • Improve</b>
-</p>
+#### --------------------------------- Learn • Build • Experiment • Improve ---------------------------------------
 
-<p align="center">
-  Made with Python & curiosity 🤖
-</p>
+#### ----------------------------------- Made with Python & curiosity 🤖 ---------------------------------------
