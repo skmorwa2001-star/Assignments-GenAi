@@ -90,4 +90,19 @@ Apply advanced cleaning techniques
 - and store in a list without_stopword=[]
 3. Save the output as text_no_stopwords
 
+### Task 5: Handling Repeated Characters & Slang (Optional)
+1. Normalize repeated characters
+- Use '(.)\1{2,}',r'\1' its means
+      . ---> character
+      \1{2,} --> same character atleast 2 additional times
+      r'\1' ---> only one character 
+2. Create a dict of slang
+- slang_dict={"u":"you","gr8":"great","btw":"by the way","pls":"please"}
+3. Replace slang words
+- sland_dict.get(word.lower(),word)
+- Its replace dictionary if found else same as
+
+
+## PART 3 - Basic Text Preprocessing in NLP
+
 link of dataset used in assignment is ---> https://www.kaggle.com/datasets/yasserh/amazon-product-reviews-dataset
