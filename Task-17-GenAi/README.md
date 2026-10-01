@@ -81,4 +81,13 @@ Apply advanced cleaning techniques
 
 - Store result in clean_text_advanced
 
+### Task 4: Handling Stopwords
+1. Load stopwords using NLTK
+- from nltk.corpose import stopword
+2. Remove stopwords from clean_text_advanced
+- Use stopword.words('english) --> english stopwords
+- apply if condition and remove stopwords present in text
+- and store in a list without_stopword=[]
+3. Save the output as text_no_stopwords
+
 link of dataset used in assignment is ---> https://www.kaggle.com/datasets/yasserh/amazon-product-reviews-dataset
