@@ -47,5 +47,38 @@ Apply the following basic cleaning steps:
 - Create a new columns as clean_text_basic
 - Compare original text vs cleaned text              
 
+## PART 2 - Advanced Text Cleaning
+
+### Task 3: Removing Noise
+Apply advanced cleaning techniques
+1. Remove URLs
+- URLs are removed by Regular expression
+- use this (r'https?//\S+|www\.\S+',"",text) 
+       https ----> matches with the url
+       ?S ----> s is optional
+       :// ---> matches the ://
+       \S+ ----> matches characters inside the URL as the rest of the URL
+       | --> or
+       www\.\S+ ---> match URL starting with www.
+2. Remove email addressess
+- Use this pattern (r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b')
+           b[A-Za-z0-9._%+-] ---> word boundary for username
+           @[A-Za-z0-9.-] ----> word boundary for domain
+           \.[A-Za-z]{2,} ----> for extension minimium two words
+3. Remove HTML tags
+- Use the pattern (r'<.*?>',"",text)   
+          <.*?> ---> only character is present
+          "" ----> remove html tags replace unspace
+4. Remove special characters and emojis
+- Use the pattern --->
+        "["
+        u"\U0001F600-\U0001F64F" # EMOTICONS
+        u"\U0001F300-\U0001F5FF" # SYMBOLS AND PICTOGRAPHS 
+        u"\U0001F680-\U0001F6FF" # TRANSPORT AND MAP
+        u"\U0001F1E0-\U0001F1FF" # FLASH 
+        "]+",
+        flags=re.UNICODE                   
+
+- Store result in clean_text_advanced
 
 link of dataset used in assignment is ---> https://www.kaggle.com/datasets/yasserh/amazon-product-reviews-dataset
