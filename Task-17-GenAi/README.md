@@ -24,6 +24,28 @@
 - numbers
 - extra spaces
 
+### Task 2: Basic Text Cleaning
+Apply the following basic cleaning steps:
+
+1. Convert text into lowercase
+- use str.lower() -->  to convert uppercase to lowercase
+2. Remove Punctuation
+- use regular expression library
+- re.sub(r"[^\w\s]","",text) its means...
+     ^ --> not
+     \w --> matches letters digits and underscore
+     \s ---> matches whitespace characters as (spaces, tans, newlines)
+3. Remove numbers
+- re.sub(r"\d+","",text) its means 
+     \d+ ---> finds one or more digits
+     "" ---> replaces them with nothing
+4. Remove extra whitspaces
+- re.sub(r"\s+"," ",str(text)).strip()
+     \s+ --> multiple spaces , tabs, newlines find
+     " "  ---> replace single space
+     .strip() --> for remove spaces of starting and ending of sentence
+- Create a new columns as clean_text_basic
+- Compare original text vs cleaned text              
 
 
 link of dataset used in assignment is ---> https://www.kaggle.com/datasets/yasserh/amazon-product-reviews-dataset
