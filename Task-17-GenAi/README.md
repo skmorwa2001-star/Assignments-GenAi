@@ -122,4 +122,12 @@ Apply advanced cleaning techniques
 2. Compare original words vs stemmed words
 - compare the words list before and after of stem
 
+### Task 8: Lemmatization
+1. Apply wordnet lemmatization
+- from nltk.stem import WordNetLemmatizer
+- from nltk.corpus import wordnet
+- Apply for all previous task words 
+2. Compare stemming vs lemmization results
+- print the results of both process
+
 link of dataset used in assignment is ---> https://www.kaggle.com/datasets/yasserh/amazon-product-reviews-dataset
