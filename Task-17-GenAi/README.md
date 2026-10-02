@@ -114,5 +114,12 @@ Apply advanced cleaning techniques
 3. Diplay tokens for atleast 3 text samples
 - it shows the output
 
+### Task 7: Stemming
+1. Apply Porter Stemmer 
+- from nltk.stem import PorterStemmer
+- make list of some words with passing through the stem the give stemmed words
+- for loop is used iterate over all list
+2. Compare original words vs stemmed words
+- compare the words list before and after of stem
 
 link of dataset used in assignment is ---> https://www.kaggle.com/datasets/yasserh/amazon-product-reviews-dataset
