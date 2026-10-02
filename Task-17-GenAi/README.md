@@ -148,5 +148,24 @@ Apply advanced cleaning techniques
 
 - Advanced Cleaning ----> advanced cleaning goes further by processing the liguistic structure of text using techniques such as tokenization , stopwords removal , stemming , and lemmatization . Its produces text that is more suitable for NLP analysis and machine learning models
 
+2. Why lemmatization is preferred over stemming.
+- Lemmatization is preferred over stemming because it converts words into meaningful dictionary forms, while stemming may produce incomplete or meaningless words
+- Why lemmatization preferred?
+ i. Its preoduces meaningful words
+ ii. We considers linguistic / Grammatical information
+ iii. Its more accurate then stemming
+iv. Its provides clearer and meaningful text for NLP model
+
+3. Importance of preprocessing in NLP models
+- NLP preprocessing means cleaning and transforming raw text into a suitable format before giving to a NLP or Machine learning model
+- Why Important
+- 1. Removes unnecessary data --> removes punctuations , special charcters , extra spaces , etc .
+- 2. Reduces noise ---> makes the text cleaner by removing irrelevant information .
+- 3. Standardize text ---> prevent the model from treating them a different words
+- 4. Reduces vocubulary size ---> stopword removal and lemmatization can reduce the number of unique words
+- 5. Improves model performance ---> clean and consistent input can help the model learn meaningful pattern more efficiently
+- 6. Converts text into usable form ---> techniques like tokenization convert sentences into individual words / tokens that NLP algorithms can process
+- 7. Improves computational efficiency ---> less unnecssary text means fewer features and potentially faster processing
+
 
 link of dataset used in assignment is ---> https://www.kaggle.com/datasets/yasserh/amazon-product-reviews-dataset
