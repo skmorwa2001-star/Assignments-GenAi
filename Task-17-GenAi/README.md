@@ -105,4 +105,14 @@ Apply advanced cleaning techniques
 
 ## PART 3 - Basic Text Preprocessing in NLP
 
+### Task 6: Tokenization
+1. Perform word tokenization
+- from nltk.tokenize import word_tokenize, sent_tokenize
+- for word_tokenize --> divided into words tokens
+2. Perform sentence tokenization
+- for sent_tokenize --> divided into sentence tokens
+3. Diplay tokens for atleast 3 text samples
+- it shows the output
+
+
 link of dataset used in assignment is ---> https://www.kaggle.com/datasets/yasserh/amazon-product-reviews-dataset
