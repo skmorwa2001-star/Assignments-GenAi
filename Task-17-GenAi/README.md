@@ -130,4 +130,23 @@ Apply advanced cleaning techniques
 2. Compare stemming vs lemmization results
 - print the results of both process
 
+### Task 9: Final NLP Pipeline Creation
+- Create a single function nlp_preprocess(text)
+1. Lowercasing ---> text.lower() is convert all characters into lowercase
+2. Noise Removal ---> re.sub(r'[^a-zA-Z\s]','',text) is used remove unnecssary charactersand spaces from dataset
+3. Stopword removal ---> remove those with not any useful infomation for our NLP tasks
+4. Tokenization --> individual words / sentences divides into tokens
+5. Lemmatization ---> converts the words into base/dictionary words
+- return ' '.join(tokens) ---> convert token list to sentence/string format
+
+
+### Task 10: Observations & Insights
+- Write short observations
+
+1. Difference between basic and advanced cleaning
+- Basic Cleaning ---> basic cleaning removes unwanted characters , lowercasing , punctuations , numbers , removes extra spaces , and formatting from text. It is simpler and faster .
+
+- Advanced Cleaning ----> advanced cleaning goes further by processing the liguistic structure of text using techniques such as tokenization , stopwords removal , stemming , and lemmatization . Its produces text that is more suitable for NLP analysis and machine learning models
+
+
 link of dataset used in assignment is ---> https://www.kaggle.com/datasets/yasserh/amazon-product-reviews-dataset
