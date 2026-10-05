@@ -33,3 +33,10 @@
 - One-hot ---> one_hot_dff
 
 ### Task 2: One-Hot Encoding Using Scikit-learn
+1. Use countvectorizer(binary=true)
+- cv=CountVectorizer(binary=True) ---> binary if True all non zero counts are set to 1. the default is False
+2. cv.fit_tranform().toarray() ---> it fit the data and convert into encoded matrix form
+  - toarray() ---> to convert the data into array form
+3. Print:
+- vocabulary ---> cv.vocabulary_  ---> gives the vocabulary words
+- print the encoded_matrix
