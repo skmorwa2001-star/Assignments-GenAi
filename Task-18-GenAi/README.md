@@ -40,3 +40,18 @@
 3. Print:
 - vocabulary ---> cv.vocabulary_  ---> gives the vocabulary words
 - print the encoded_matrix
+
+
+## PART 2 - Bag of Words (BoW)
+
+### Task 3 : Bag of Words representation
+- Takes all available cleared reviews data
+1. Use CountVectorizer()
+- bow=CountVectorizer()  ---> Creates the Bag of Words converter
+2. Fit on the entire dataset
+- fit ---> learns all unique words inn the dataset
+3. Tranform text into BoW vectors
+- transform ---> converts every review into numerical word count vectors
+4. Display:
+- Display the length of vocabulary size
+- sample of feature vectors or matrix table
