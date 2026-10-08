@@ -55,3 +55,16 @@
 4. Display:
 - Display the length of vocabulary size
 - sample of feature vectors or matrix table
+
+### Task 4 : Understanding word frequency
+1. Calculate total frequency of each word
+- bow.get_feature_names_out() ----> gets vocubulary words
+- bow_matrix.sum() ---> sum of total frequency
+2. Identify
+- .sort_values() ---> arange the frequency in desending value
+- also least frequent words of all the frequency_df
+3. Explain how BoW captures frequency information?
+- The Bag of Words (BoW) model captures frequency information by converting text into numerical vectors where each dimension represents a known word, and the value in that dimension represents how many times that word appears. It throws away all grammar , context ,and word order treating the document like a literal bag of disconnected words
+- 1. Vocubulary building
+- 2. Vector initialization
+- 3. Frequency Counting
