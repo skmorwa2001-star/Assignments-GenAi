@@ -68,3 +68,20 @@
 - 1. Vocubulary building
 - 2. Vector initialization
 - 3. Frequency Counting
+
+### Task 5 : Unigrams, Bigrams, & Trigrams
+- from sklearn.feature_extraction.text import CountVectorizer
+1. Create BoW using:
+- unigram(ngram_range=(1,1)) , bigram(ngram_range=(2,2)) , trigram(ngram_range=(3,3))
+- matrix=unigram.fit_tranform(texts)
+- vocabulary=unigram.get_feature_names_out()
+
+2. Compare
+- vocabulary size ---> len(vocabulary)
+- sample feature vectors ---> matrix[:5].toarray()
+
+### Task 6 : Combined N-Grams
+1. USe ngram_range=(1,2)
+- CounterVectorizer(ngrma_range=(1,2))
+2. Observe the unigrams and the output in this process comes
+- Its shows the exact difference between them
