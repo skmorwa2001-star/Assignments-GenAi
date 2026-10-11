@@ -123,3 +123,16 @@ in the document
 - If any words repeated in each document its not helpful to create any difference identify
 so its IDF is low
 - If any not repeated in each document then its IDF is higher 
+
+## PART 5 - Practical Insights
+
+### Task 9 : Vectorizer Parameter Exploration
+- Experiment with:
+1. Max_features --> set the vocabulary max limit
+2. min_df ---> remove those words which are less in documents
+3. max_df ---> remove those words which more repeats in documents
+
+- Observe how vocabulary size changes
+   - max_features=5 ---> keeps at most 5 features --> limits vocabulary size to 5
+   - min_df=2 ---> keeps words appearing in at least 2 documents ---> Removes very rare words
+   - max_df=0.6 ---> removes words appearing in more than 60% of documents ---> Removes overly common words
