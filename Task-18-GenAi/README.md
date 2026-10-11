@@ -85,3 +85,17 @@
 - CounterVectorizer(ngrma_range=(1,2))
 2. Observe the unigrams and the output in this process comes
 - Its shows the exact difference between them
+
+
+## PART 4 - TF-IDF Vectorization
+
+### Task 7: TF-IDF Implementation
+- from sklearn.feature_extraction.text import TfidfVectorizer
+1. USe TfidfVectorizer
+- tf=TfidfVectorizer()
+2. Fit and transform the dataset
+- tf.fit_transform(texts)
+3. Display:
+- Vocabulary ---> tf.get_feature_names_out()
+- TF-IDF matrix shape ----> tf.idf_
+
