@@ -99,3 +99,27 @@
 - Vocabulary ---> tf.get_feature_names_out()
 - TF-IDF matrix shape ----> tf.idf_
 
+### Task 8: BoW vs IF-IDF comparsion
+- from sklearn.feature_extraction.text import CountVectorizer , TfidfVectorizer
+1. Compare word weights for common words
+- bow_matrix=bow.fit_transform(texts)
+- tf_matrix=tf.fit_transform(texts)
+2. Identify:
+- Words with high TF-IDF ---> its means the words which less repeat in files/Documents and give a meaningful
+in the document
+
+- Word with low TF-IDF ---> its means the words which more repeats in the files and documents 
+3. Explain why TF-IDF down-weights common words
+- TF-IDF are two components:
+       
+         TF(t,d) = frequency of term t in document d
+
+         IDF(t) = log(N/df(t))
+
+         where,
+         - N = total number of documents
+         - df(t) = number of documents containing the word
+
+- If any words repeated in each document its not helpful to create any difference identify
+so its IDF is low
+- If any not repeated in each document then its IDF is higher 
