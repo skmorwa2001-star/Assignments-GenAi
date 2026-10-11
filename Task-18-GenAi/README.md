@@ -136,3 +136,39 @@ so its IDF is low
    - max_features=5 ---> keeps at most 5 features --> limits vocabulary size to 5
    - min_df=2 ---> keeps words appearing in at least 2 documents ---> Removes very rare words
    - max_df=0.6 ---> removes words appearing in more than 60% of documents ---> Removes overly common words
+
+### Task 10 : Practical Questions
+1. Difference between one-hot encoding and BoW?
+- One-hot Encoding ---> it is a type of text vectorization where we convert the text into vectors such that every unique 
+word while have their corresponding vector
+
+- BoW ---> Bag of words as the name states , here we are looking for words counts 
+ we check the given word in the given document if that how many times it is getting repeated
+
+Example - sent --> AI is useful and AI is powerful
+               -> one-hot encoding : Each word has its different vector
+               -> BoW : AI=2, is=2, useful=1, and=1, powerful=1 
+
+2. Why do N-gram increase dimensionality?
+- In N-gram rather than taking a unique word in the vocabulary we take the sequence of words in the vocabulary
+
+Example: machine learning is useful
+     -> unigrams : machine , learning, is , useful
+     -> bigrams : machine learning , learning is , is useful 
+     -> trigram : machine learning is , learning is useful
+
+As the n-gram size increases as vocabulary word combinations adds and its helps in increase features and vector dimensions     
+
+3. When should we prefer TF-IDF over BoW?
+- TF-IDF is prefer when we give higher weight of important and distinctive words
+
+Example: Document search , information retrieval and text classification its use TF-IDF because common words has less influence
+
+- BoW is useful when we need simple word counts
+
+4. Limitations of count-based vectorization?
+- No semantic understanding : not related the similar words meaning
+- High dimensionality : as large vocabulary as vectors size increase
+- Spare representation : most vectors value is zero
+- word order loss : basic word sequence has preserve
+- Synonym problem : happy and joyful has not automatically similar understandin
