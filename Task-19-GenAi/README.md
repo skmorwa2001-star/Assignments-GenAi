@@ -109,3 +109,14 @@ context word : cat , milk
 ## PART 3 - Training Word2Vec on Custom Data
 
 ### Task 5 : Prepare Text for Word2Vec
+- from nltk.tokenize import sent_tokenize , word_tokenize
+1. Tokenize cleaned text into sentences
+- Complete data into sentences tokens
+- Create a empty list 
+- iterate over the loop and store in lists
+2. Tokenize sentences into words
+- Convert data into words tokens
+- Create a empty list
+- iterate over loop and store in list form
+3. Store them as a list of lists
+- print(tokenized_sentences)
