@@ -69,4 +69,43 @@ If the target word is drinks and the window size is 1 the context words are cat 
 
 Example : if the embedding dimension is 3:
    king --> [0.5 , 0.4 , 0.8]
-   the word king is represent using 3 numerical values                  
+   the word king is represent using 3 numerical value
+
+
+### Task 3: Types of Word2Vec Techniques
+1. CBOW (Continuous Bag of Words) : CBOW predicts a target word using its surrounding context words
+
+Example : The cat drinks milk
+Context words : the cat milk
+target word : drinks
+- CBOW is generally faster to train and works well with large datasets and frequent words
+- it is good choice when training efficiency is important
+
+2. Skip Gram : Skip gram predicts surrounding context words using a target word
+
+Example : The cat drinks milk
+target word : drinks
+context word : cat , milk
+- skip gram is often useful for learning representations of rare words 
+- it can work well when you want good word representations and have enough training time and data       
+
+### Task 4: Neural Network Intuition Behind Word2Vec
+1. Input layer representation : the input layer receives a word represented as a one-hot encoded vector
+- the vector contains 1 at the positions of the input word and 0 at all other positions
+
+2. Hidden layer (Embedding Layer) : the hidden layer converts the one hot vector into in similar , dense numerical vector called a word embedding
+- its values are obtained from the network's weight matrix
+
+3. Output layer : The output layer predicts a word based on the model's objective 
+- CBOW : Predicts the target word from context words
+- Skip gram : predicts context words from the target word
+
+4. How do weights become word embeddings ?
+- During training , the neural network adjusts its weights to improve word predictions. The weights connecting the input representation to the hidden layer from the embedding matrix
+- Each words corresponding row in this matrix represents its learned embedding 
+- Words appearing in similar contexts may develop similar vector representations 
+
+
+## PART 3 - Training Word2Vec on Custom Data
+
+### Task 5 : Prepare Text for Word2Vec
