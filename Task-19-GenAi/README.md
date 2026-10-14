@@ -120,3 +120,23 @@ context word : cat , milk
 - iterate over loop and store in list form
 3. Store them as a list of lists
 - print(tokenized_sentences)
+
+### Task 6: Train Word2Vec Model
+- Step:1 ---> model creation
+1. Train a Word2Vec model
+- vector_size=100 ---> size of vector is 100
+- window=5  ---> target word surrounding maximum 5 words context consider
+- min_count=1 ---> one time ongoing word store as vocabulary
+- sg=0 ----> CBOW selected
+
+- Step:2 ---> Build vocabulary
+   - build_vocab() ---> dataset unique tokens identify and prepared the models vocabulary
+
+- Step:3 ---> Train the model
+    - tokenized_sentences ---> prepared text
+    - total_examples ---> count of training sentences
+    - epochs ---> total number of passes on training on the dataset
+
+2. Print:
+- Vocabulary Size
+- Embedding vector for a sample word    
