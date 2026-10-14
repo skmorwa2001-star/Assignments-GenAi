@@ -139,4 +139,12 @@ context word : cat , milk
 
 2. Print:
 - Vocabulary Size
-- Embedding vector for a sample word    
+- Embedding vector for a sample word
+
+### Task 7: Skip-Gram Word2Vec model
+1. Train another word2vec model 
+- sg=1 (Skip-Gram model)
+- similar as previous task number 6
+2. Compare 
+- Training time 
+- similar words output ---> model.wv.most_similar()
