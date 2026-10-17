@@ -148,3 +148,50 @@ context word : cat , milk
 2. Compare 
 - Training time 
 - similar words output ---> model.wv.most_similar()
+
+
+### Task 8 : Word Similarity & Vector operations
+- model.wv.most_similar() ---> most_similar on the basis  of cosine similarity give relation word vectors
+- perform arthematric operations to give apropiate answer
+- test similar relationship from the dataset
+- print vector and length of vectors
+
+## PART 4 - Evaluation & Insights
+
+### Task 9: Visualizing Word Embeddings
+- from sklearn.decomposition import PCA
+- import plotly.io as pio and select default browser
+- import plotly.express as px
+
+
+### Task 10 : Observations & Limitations
+
+1. Difference between CBOW & SkipGram in practice
+- CBOW (Continuous Bag of Words) predicts a target word from its surrounding context words, and Skip gram predicts surrounding context words from a target word
+- CBOW is useful when large dataset and faster training
+- Skip gram is used when rare words and detailed word representations
+
+2. Advantage of Word2Vec over TF-IDF
+- Semantic similarity :- it can learn that word like car and automobile have related meainings
+- Dense represntation :- it used compact vectors instead of typically sparse TF-IDF vectors
+- Word relationship :- it can capture relationships between words based on their usage in context
+- Generalization :- learned word vectors can be reused in different NLP tasks
+- Context patterns :- it learns associations from surrounding words in a text corpus
+
+3. Limitations of Word2Vec
+- Context independent embeddings
+- Out of vocabulary words
+- Requires large data
+- Ignores word order
+- rare words
+- no true understanding
+
+4. Why context still matters in modern NLP (lead in to transformers)
+- word meaning
+- sentence understanding
+- ambiguity
+- better predictions
+
+- unlike Word2Vec , which assigns a fixed vector to each word transformer models use mechanism such as self attention to create
+context dependent representations
+- this allows the representation of a word to change according to the sentence in which it appears
