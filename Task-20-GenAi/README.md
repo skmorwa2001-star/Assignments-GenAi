@@ -37,6 +37,12 @@
 ## PART 2 - Text Vectorization
 
 ### Task 3: Vectorization using TF-IDF
+1. Use Tfidfvectorizer to convert text into vectors
+2. set parameters as max_range ---> maximium features setect limit
+- ngram_range=(1,2) --> unigram and bigram both considers
+- fit_transform ---> vocabulary understands and text converts into numerical vectors
+3. print
+- matrix.shape
 
 
 
