@@ -44,6 +44,15 @@
 3. print
 - matrix.shape
 
+### Task 4: Similarity Computation
+1. Compute cosine similarity between all items
+- from sklearn.metrics.pairwise import cosine_similarity
+2. Store similarity matrix
+- similarity_matrix=cosine_similarity(data)
+
+3. Explain brief why cosine similarity is used
+- Cosine similarity measures the angle between the vectors
+- it is useful in recommendation because it primarily used to give pattern/ direction comparision ratheer than length of documents
 
 
 ### Dataset Details
